@@ -9,8 +9,8 @@ module.exports = async (req, res, next) => {
             return next(new ErrorResponse(`Todo with ID ${todoId} Not Found`, 404, "Not Found"));
         }
         res.status(200).json({
-            status: 'success',
-            message: "success",
+            status: 'Success',
+            message: "Success",
             data: todo,
         })
         next();

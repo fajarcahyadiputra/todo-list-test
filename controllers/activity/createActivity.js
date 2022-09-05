@@ -29,8 +29,8 @@ module.exports = async (req, res, next) => {
 
         const newActivity = await Activity.create(dataBody);
         res.status(201).json({
-            status: 'success',
-            message: 'Successfully inserting',
+            status: 'Success',
+            message: 'Success',
             data: newActivity,
         })
         next();

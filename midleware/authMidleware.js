@@ -4,7 +4,6 @@ const { JWT_PRIVATE_KEY } = process.env;
 module.exports = (req, res, next) => {
     try {
         let token = req.headers.authorization;
-        console.log(req.headers);
         if (!token) {
             res.status(404).json({
                 statusCode: 404,

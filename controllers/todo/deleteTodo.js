@@ -10,8 +10,8 @@ module.exports = async (req, res, next) => {
         }
         await todo.destroy();
         res.status(200).json({
-            status: 'success',
-            message: 'Successfully deleted',
+            status: 'Success',
+            message: 'Success',
             data: {}
         })
         next();

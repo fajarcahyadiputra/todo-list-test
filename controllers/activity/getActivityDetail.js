@@ -18,7 +18,7 @@ module.exports = async (req, res, next) => {
         }
         res.status(200).json({
             status: 'success',
-            message: "success",
+            message: "Success",
             data: activity,
         })
         next();

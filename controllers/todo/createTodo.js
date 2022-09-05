@@ -38,8 +38,8 @@ module.exports = async (req, res, next) => {
         dataBody.updated_at = dateToday;
         const newtodd = await Todo.create(dataBody);
         res.status(201).json({
-            status: 'success',
-            message: 'Successfully inserting',
+            status: 'Success',
+            message: 'Success',
             data: newtodd,
         })
         next();

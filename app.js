@@ -59,9 +59,9 @@ app.use(error);
 
 
 // catch 404 and forward to error handler
-// app.use(function (req, res, next) {
-//   return next(new ErrorResponse('page not found', 401));
-// });
+app.use(function (req, res, next) {
+  return next(new ErrorResponse('page not found', 401));
+});
 
 // error handler
 app.use(function (err, req, res, next) {
